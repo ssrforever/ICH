@@ -1,6 +1,12 @@
+package com.example.demo.controller;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 @RestController
 @RequestMapping("/api")
-@CrossOrigin // 允许跨域，否则前端连不上后端
+@CrossOrigin
 public class TestController {
     @GetMapping("/hello")
     public String sayHello() {
